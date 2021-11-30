@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Routes} from 'react-router-dom';
+import Header from './components/Header';
+import MainRoutes from './routes';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      Hello World!!
-    </div>
+    <Routes>
+      <Header/>
+      <MainRoutes/>
+    </Routes>
   );
 }
-
-export default App;
